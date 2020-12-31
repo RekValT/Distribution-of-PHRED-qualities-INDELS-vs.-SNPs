@@ -4,6 +4,7 @@
 
 
 **1. príprava**
+
 *cd projects*
 *mkdir fin_ex*
 *cd fin_ex*
@@ -12,6 +13,7 @@
 gunzip /data/luscinia_vars.vcf.gz*
 
 **2. filtrovanie**
+
 	# odstranenie "#" riadkov 
 *grep -v -E ^# luscinia_vars.vcf* 
 	# kontrola grep -v -E ^# data/luscinia_vars.vcf | cut -f1 | sort | uniq -c 
@@ -37,6 +39,7 @@ cut -f1,6,8 data/luscinia_vars_filtred.vcf | awk '($3 ~/^DP/) {print $1, $2,"\tS
 >plot.r
 
 *library(tidyverse)*
+
 *library(ggplot2)*
 
 *setwd ('~/projects/fin_ex/')*
@@ -52,4 +55,4 @@ cut -f1,6,8 data/luscinia_vars_filtred.vcf | awk '($3 ~/^DP/) {print $1, $2,"\tS
   scale_y_log10()*
   
   ### Graf
-  ![plot] (https://github.com/RekValT/Distribution-of-PHRED-qualities-INDELS-vs.-SNPs/blob/master/results/plot.png)
+  ![plot](https://github.com/RekValT/Distribution-of-PHRED-qualities-INDELS-vs.-SNPs/blob/master/results/plot.png)
