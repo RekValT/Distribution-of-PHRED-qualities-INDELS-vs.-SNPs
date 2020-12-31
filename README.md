@@ -13,6 +13,7 @@
 gunzip /data/luscinia_vars.vcf.gz*
 
 **2. filtrovanie**
+> workflow.sh
 
 	# odstranenie "#" riadkov 
 *grep -v -E ^# luscinia_vars.vcf* 
