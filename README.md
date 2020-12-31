@@ -13,9 +13,9 @@
 
 *mkdir data*
 
-*cp -T /data-shared/vcf_examples/luscinia_vars.vcf.gz ~/projects/fin_ex/data/luscinia_vars.vcf.gz
+*cp -T /data-shared/vcf_examples/luscinia_vars.vcf.gz ~/projects/fin_ex/data/luscinia_vars.vcf.gz*
 
-gunzip /data/luscinia_vars.vcf.gz*
+*gunzip /data/luscinia_vars.vcf.gz*
 
 
 **2. filtrovanie**
